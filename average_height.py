@@ -1,8 +1,17 @@
-student_heights = input("Input a list of student heights in centimeters seperated by a space \n")
-heights_list = student_heights.split()
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split()
 
-heights = []
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
 
-for height in heights_list:
-    heights.append(int(height))
 
+#Write your code below this row 👇
+sum = 0
+index = 0
+for height in student_heights:
+    sum += height
+    index += 1
+
+average = sum / index
+print(round(average, 1))
