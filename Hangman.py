@@ -20,15 +20,19 @@ for i in range(0, num_of_letters):
 
 
 #####Receive input and check whether the letter matches any letter in the word#####
+game_over = False
+while game_over == False:
+    guess = input("Guess a letter: ").lower()
+    for i in range(0, len(chosen_word)):
+        if chosen_word[i] == guess:
+            blank_list[i] = guess
+    seperator = " "
+    display = seperator.join(blank_list)
+    print(display)
+    if "_" not in blank_list:
+        game_over = True
+        print("You Win!")
 
-guess = input("Guess a letter: ").lower()
-for i in range(0, len(chosen_word)):
-    if chosen_word[i] == guess:
-        blank_list[i] = guess
-
-seperator = " "
-blank = seperator.join(blank_list)
-print(blank)
 
 
 
