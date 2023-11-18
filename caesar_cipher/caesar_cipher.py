@@ -1,8 +1,10 @@
+import art
+print(art.logo)
 def caesar_cipher(text, shift, direction):
     message = ""
     shifted_position = 0
     for letter in text:
-        if letter == " ":
+        if letter == " " or letter not in alphabet:
             message += letter
         else:
             position = alphabet.index(letter)
