@@ -1,17 +1,15 @@
 from art import logo
 print(logo)
-
 auction = {}
 def add_bidders(name, bid):
     auction[name] = bid
-
-
+    
 print("Welcome to the secret auction program.")
 
 continue_bidding = True
 while continue_bidding:
-    name = input("What is your name? ")
-    bid = input("What is your bid? $")
+    name = input("What is your name?: ")
+    bid = input("What is your bid?: $")
     other_bidder = input("Are there any other bidders? Type 'yes' or 'no' ")
     add_bidders(name=name, bid=bid)
     print("\n" * 100)
