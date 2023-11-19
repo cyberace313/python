@@ -16,7 +16,7 @@ for student in student_scores:
         grade = "Exceeds Expectations"
     elif score > 70:
         grade = "Acceptable"
-    elif score <= 70:
+    else:
         grade = "Fail"
     student_grades[student] = grade
 
