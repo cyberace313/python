@@ -10,6 +10,7 @@ def is_leap(year):
     else:
         return False
 def days_in_month(year, month):
+    """ Takes year and month as input, returns the number of days from a list of month days"""
     if month > 12 or month < 1:
         return "Invalid month"
     elif year < 0:
