@@ -11,21 +11,20 @@ questions = [
 ]
 
 choices = [
-    "A. Moscow B. London C. Berlin D. Paris",
-    "A. Leopard B. Tiger C. Lion D. Cheetah",
-    "A. Uranus B. Earth C. Neptune D. Jupiter",
-    "A. Mars B. Mercury C. Venus D. Pluto",
-    "A. Elephant B. Polar Bear C. Lion D. Tiger",
+    "A. Moscow \nB. London \nC. Berlin \nD. Paris",
+    "A. Leopard \nB. Tiger \nC. Lion \nD. Cheetah",
+    "A. Uranus \nB. Earth \nC. Neptune \nD. Jupiter",
+    "A. Mars \nB. Mercury \nC. Venus \nD. Pluto",
+    "A. Elephant \nB. Polar Bear \nC. Lion \nD. Tiger",
 ]
 
 answers = [
     "A", "B", "D", "A", "C"
 ]
 question_num = len(questions)
-print(question_num)
 
 for i in range(0, question_num):
-    print(questions[i])
+    print(f"{i + 1}. {questions[i]}")
     print(choices[i])
     user_input = input("Choose one of the options. Type 'A', 'B', 'C', or 'D' ").upper()
     if user_input == answers[i]:
