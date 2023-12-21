@@ -69,7 +69,7 @@ class CourseManagement:
 class AdministratorInterface:
     @staticmethod
     def display_menu():
-        print("\n===== Administrator Menu =====")
+        print("\n           Administrator Menu          ")
         print("1. Add a new course")
         print("2. Enroll a student")
         print("3. Assign a grade")
@@ -90,8 +90,8 @@ class AdministratorInterface:
         course_id = input("Enter the course code to enroll the student: ")
         # Search for the course in the system (not implemented in this basic example)
 
-        student = Student(student_id, "John Doe")  # Assuming a new student is created for simplicity
-        course = Course(course_id, "Sample Course")  # Assuming a new course is created for simplicity
+        student = Student(student_id, "Vladimir Putin")  # Assuming a new student is created for simplicity
+        course = Course(course_id, "Math")  # Assuming a new course is created for simplicity
         CourseManagement.enroll_student(student, course)
 
     @staticmethod
@@ -103,8 +103,8 @@ class AdministratorInterface:
         # Search for the course in the system (not implemented in this basic example)
 
         grade = int(input("Enter the grade to assign: "))
-        student = Student(student_id, "John Doe")  # Assuming an existing student is used for simplicity
-        course = Course(course_id, "Sample Course")  # Assuming an existing course is used for simplicity
+        student = Student(student_id, "Vladimir Putin")  # Assuming an existing student is used for simplicity
+        course = Course(course_id, "Math")  # Assuming an existing course is used for simplicity
         CourseManagement.assign_grade(student, course, grade)
 
     @staticmethod
@@ -112,7 +112,7 @@ class AdministratorInterface:
         student_id = input("Enter the student ID: ")
         # Search for the student in the system (not implemented in this basic example)
 
-        student = Student(student_id, "John Doe")  # Assuming an existing student is used for simplicity
+        student = Student(student_id, "Vladimir Putin")  # Assuming an existing student is used for simplicity
         CourseManagement.calculate_overall_grade(student)
 
 
@@ -132,10 +132,11 @@ def main():
         elif choice == 4:
             AdministratorInterface.calculate_overall_grade()
         elif choice == 5:
-            print("Exiting the system. Goodbye!")
+            print("Exiting the system.")
         else:
             print("Invalid choice. Please try again.")
 
 
 if __name__ == "__main__":
     main()
+
